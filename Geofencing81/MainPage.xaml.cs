@@ -26,14 +26,14 @@ namespace Geofencing81
         {
             try
             {
-                var newPoint = new Geopoint(new BasicGeoposition()
+                var newPoint = new BasicGeoposition()
                 {
                     Latitude = double.Parse(LatitudeText.Text),
                     Longitude = double.Parse(LongitudeText.Text)
-                });
-                var geofence = new Geofence(NameText.Text, new Geocircle(newPoint.Position, double.Parse(RadiusText.Text)),
+                };
+                var geofence = new Geofence(NameText.Text, new Geocircle(newPoint, double.Parse(RadiusText.Text)),
                     MonitoredGeofenceStates.Entered | MonitoredGeofenceStates.Exited,
-                    false, TimeSpan.FromSeconds(10));
+                    false, TimeSpan.FromSeconds(1));
                 GeofenceMonitor.Current.Geofences.Add(geofence);
             }
             catch (Exception ex)
