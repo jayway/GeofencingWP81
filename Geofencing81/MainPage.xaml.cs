@@ -33,7 +33,7 @@ namespace Geofencing81
                 };
                 var geofence = new Geofence(NameText.Text, new Geocircle(newPoint, double.Parse(RadiusText.Text)),
                     MonitoredGeofenceStates.Entered | MonitoredGeofenceStates.Exited,
-                    false, TimeSpan.FromSeconds(1));
+                    false, TimeSpan.FromSeconds(4));
                 GeofenceMonitor.Current.Geofences.Add(geofence);
             }
             catch (Exception ex)

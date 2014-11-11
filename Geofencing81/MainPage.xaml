@@ -10,13 +10,13 @@
 
     <StackPanel VerticalAlignment="Center" >
         <TextBlock TextWrapping="Wrap" Text="Name:" Margin="24,12,24,0"/>
-        <TextBox x:Name="NameText" Margin="24,12" TextWrapping="Wrap" Text="Point01" VerticalAlignment="Stretch"/>
+        <TextBox x:Name="NameText" Margin="24,12" TextWrapping="Wrap" Text="JaywayOffice" VerticalAlignment="Stretch"/>
         <TextBlock TextWrapping="Wrap" Text="Latitude:" Margin="24,12,24,0"/>
         <TextBox x:Name="LatitudeText" Margin="24,12" TextWrapping="Wrap" Text="55.6127809826285" VerticalAlignment="Stretch"/>
         <TextBlock TextWrapping="Wrap" Text="Longitude:" Margin="24,12,24,0"/>
         <TextBox x:Name="LongitudeText" Margin="24,12" TextWrapping="Wrap" Text="13.0031764693558" VerticalAlignment="Stretch"/>
         <TextBlock TextWrapping="Wrap" Text="Radius:" Margin="24,12,24,0"/>
-        <TextBox x:Name="RadiusText" Margin="24,12" TextWrapping="Wrap" Text="2000" VerticalAlignment="Stretch"/>
+        <TextBox x:Name="RadiusText" Margin="24,12" TextWrapping="Wrap" Text="1000" VerticalAlignment="Stretch"/>
         <Button Content="Add coordinate for Geofencing" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="24,6,24,12" Click="AddCoordinate_Click"/>
         <Button Content="Start Foreground Geofencing" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="24,12,24,0" Click="StartInForeground_Click"/>
         <Button Content="Start Background Geofencing" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="24,0,24,12" Click="StartInBackground_Click"/>
